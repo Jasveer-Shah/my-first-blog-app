@@ -36,6 +36,9 @@ var storage = multer.diskStorage({
       // at /uploads url end point use uploads folder
 app.use('/uploads', express.static('uploads'));
 
+app.get("/healthcheck", (req, res)=>{
+    res.status(200).send("working")
+})
 app.get('/api/posts', (req, res) => {
     // const test = {
     //     testing:"testing",
