@@ -74,4 +74,4 @@ app.post('/api/posts', upload.single("post-image"), (req,res) => {
     // res.send("Ok")
 })
 
-app.listen(3003, () => console.log("Listening at localHost:3003"))
+app.listen(3000, () => console.log("Listening at localHost:3000"))
