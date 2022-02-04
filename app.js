@@ -76,6 +76,6 @@ app.post('/api/posts', upload.single("post-image"), (req,res) => {
      res.status(201).send(newPost)
     // res.send("Ok")
 })
-
-app.listen(80, () => console.log("Listening at localHost:80")
+const port = process.env.port || 3000;
+app.listen(port, () => console.log("Listening at localHost:3000")
 )
