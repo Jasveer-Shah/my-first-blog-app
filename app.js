@@ -36,9 +36,12 @@ var storage = multer.diskStorage({
       // at /uploads url end point use uploads folder
 app.use('/uploads', express.static('uploads'));
 
-app.get("/healthcheck", (req, res)=>{
-    res.status(200).send("working")
+app.get("/", (req, res)=>{
+    res.send("hello baby from blog app")
 })
+// app.get("/healthcheck", (req, res)=>{
+//     res.status(200).send("working")
+// })
 app.get('/api/posts', (req, res) => {
     // const test = {
     //     testing:"testing",
@@ -74,4 +77,5 @@ app.post('/api/posts', upload.single("post-image"), (req,res) => {
     // res.send("Ok")
 })
 
-app.listen(80, () => console.log("Listening at localHost:80"))
+app.listen(80, () => console.log("Listening at localHost:80")
+)
