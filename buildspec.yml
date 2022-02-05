@@ -6,12 +6,13 @@ phases:
       nodejs: 14.17.0
   build:
     commands:
-      - echo "this is a build phase... Zipping my webpage"
+      - echo "This is a build phase... Zipping my webpage"
       - echo "Package & Dependicies are getting installed"
       - npm -f install
       - echo "Packages have been installed"
+      
   post_build:
-   commands:
+    commands:
       - echo "Deployed to s3"
 artifacts:
   files: 
