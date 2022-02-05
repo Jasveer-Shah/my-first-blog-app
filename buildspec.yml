@@ -5,8 +5,8 @@ phases:
     runtime-versions:
       nodejs: 14.17.0
   build:
-    commands:this is a build phase... Zipping my webpage"
-      -echo ""
+    commands:
+      -echo "this is a build phase... Zipping my webpage"
       - echo "Package & Dependicies are getting installed"
       - npm -f install
       - echo "Packages have been installed"
