@@ -10,8 +10,8 @@ phases:
       - echo "Package & Dependicies are getting installed"
       - npm -f install
       - echo "Packages have been installed"
-      post_build:
-      -echo "Deplpoyed to s3"
+  post_build:
+      -echo "Deployed to s3"
 artifacts:
   files: 
   - '**/*'
