@@ -14,8 +14,7 @@ phases:
       post_build:
       -echo "Deplpoyed to s3"
 artifacts:
-  type: zip
   files: 
   - '**/*'
-  paths:
-    - '*'
+
+ 
