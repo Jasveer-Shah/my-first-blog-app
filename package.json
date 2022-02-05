@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": { "node" : "14.17.0" },
   "author": "Jasveer Shah",
   "license": "ISC",
   "dependencies": {
